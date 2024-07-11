@@ -6,4 +6,4 @@ Voir fichier "Projet-Devoir-ete-2024.pdf"
 Ressources :
   -  Ennoncé : Projet-Devoir-ete-2024.pdf
   -  Diagramme de cas d'utilisation : Devoir1_UseCase.jpg
-  -  Projet Modelio : inf1163_projetsession_timelog.xmi
+  -  Projet Modelio en uml et xmi : inf1163_projetsession_timelog.xmi ; inf1163_projetsession_timelog.uml
