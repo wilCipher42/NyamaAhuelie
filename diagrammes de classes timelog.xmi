@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:JavaExtensions="http:///schemas/JavaExtensions/_oLtqsFEtEe-g8ItQ6BHJRQ/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/JavaExtensions/_oLtqsFEtEe-g8ItQ6BHJRQ/0 JavaExtensions.profile.xmi#_oM1FB1EtEe-g8ItQ6BHJRQ">
+  <uml:Model xmi:id="_oLavwFEtEe-g8ItQ6BHJRQ" name="diagrammes de classes timelog">
+    <eAnnotations xmi:id="_oLavwVEtEe-g8ItQ6BHJRQ" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_oLavwlEtEe-g8ItQ6BHJRQ" name="exporterVersion">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_oLavw1EtEe-g8ItQ6BHJRQ" value="3.0.0"/>
+      </contents>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_oLavxFEtEe-g8ItQ6BHJRQ" name="Activité">
+      <ownedAttribute xmi:id="_oLavxVEtEe-g8ItQ6BHJRQ" name="nom" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_oLavxlEtEe-g8ItQ6BHJRQ" name="id" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_oLavx1EtEe-g8ItQ6BHJRQ" name="dateDebut" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_oLavyFEtEe-g8ItQ6BHJRQ" name="datedeFin" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_oLavyVEtEe-g8ItQ6BHJRQ" name="void debuter" visibility="public"/>
+      <ownedOperation xmi:id="_oLavylEtEe-g8ItQ6BHJRQ" name="void terminer" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_oLavy1EtEe-g8ItQ6BHJRQ" name="Projet">
+      <ownedAttribute xmi:id="_oLavzFEtEe-g8ItQ6BHJRQ" name="activité" visibility="public" type="_oLavxFEtEe-g8ItQ6BHJRQ" isUnique="false" aggregation="shared" association="_oLav1VEtEe-g8ItQ6BHJRQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oLavzVEtEe-g8ItQ6BHJRQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oLavzlEtEe-g8ItQ6BHJRQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_oLavz1EtEe-g8ItQ6BHJRQ" name="nom" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_oLav0FEtEe-g8ItQ6BHJRQ" name="id" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_oLav0VEtEe-g8ItQ6BHJRQ" name="Attribute" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_oLav0lEtEe-g8ItQ6BHJRQ" name="dateFin" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_oLav01EtEe-g8ItQ6BHJRQ" name="dateDebut" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_oLav1FEtEe-g8ItQ6BHJRQ" name="void ajouterActivité" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_oLav1VEtEe-g8ItQ6BHJRQ" memberEnd="_oLavzFEtEe-g8ItQ6BHJRQ _oLav1lEtEe-g8ItQ6BHJRQ">
+      <ownedEnd xmi:id="_oLav1lEtEe-g8ItQ6BHJRQ" visibility="public" type="_oLavy1EtEe-g8ItQ6BHJRQ" isUnique="false" association="_oLav1VEtEe-g8ItQ6BHJRQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_oLav11EtEe-g8ItQ6BHJRQ" name="Timelog">
+      <ownedAttribute xmi:id="_oLav2FEtEe-g8ItQ6BHJRQ" name="activité" visibility="public" type="_oLavxFEtEe-g8ItQ6BHJRQ" isUnique="false" association="_oLav3lEtEe-g8ItQ6BHJRQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oLav2VEtEe-g8ItQ6BHJRQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oLav2lEtEe-g8ItQ6BHJRQ"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_oLav21EtEe-g8ItQ6BHJRQ" name="void enregistrerDebutActivité" visibility="public"/>
+      <ownedOperation xmi:id="_oLav3FEtEe-g8ItQ6BHJRQ" name="void enregistrerFinActivité" visibility="public"/>
+      <ownedOperation xmi:id="_oLav3VEtEe-g8ItQ6BHJRQ" name="void seConnecter" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_oLav3lEtEe-g8ItQ6BHJRQ" memberEnd="_oLav2FEtEe-g8ItQ6BHJRQ _oLav31EtEe-g8ItQ6BHJRQ">
+      <ownedEnd xmi:id="_oLav31EtEe-g8ItQ6BHJRQ" visibility="public" type="_oLav11EtEe-g8ItQ6BHJRQ" isUnique="false" association="_oLav3lEtEe-g8ItQ6BHJRQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_oLav4FEtEe-g8ItQ6BHJRQ" name="Employé">
+      <ownedAttribute xmi:id="_oLav4VEtEe-g8ItQ6BHJRQ" name="activité" visibility="public" type="_oLavxFEtEe-g8ItQ6BHJRQ" isUnique="false" association="_oLav7lEtEe-g8ItQ6BHJRQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oLav4lEtEe-g8ItQ6BHJRQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oLav41EtEe-g8ItQ6BHJRQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_oLav5FEtEe-g8ItQ6BHJRQ" name="timelog" visibility="public" type="_oLav11EtEe-g8ItQ6BHJRQ" isUnique="false" association="_oLav8FEtEe-g8ItQ6BHJRQ"/>
+      <ownedAttribute xmi:id="_oLav5VEtEe-g8ItQ6BHJRQ" name="projet" visibility="public" type="_oLavy1EtEe-g8ItQ6BHJRQ" isUnique="false" association="_oLav8lEtEe-g8ItQ6BHJRQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oLav5lEtEe-g8ItQ6BHJRQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oLav51EtEe-g8ItQ6BHJRQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_oLav6FEtEe-g8ItQ6BHJRQ" name="id " visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_oLav6VEtEe-g8ItQ6BHJRQ" name="nom" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_oLav6lEtEe-g8ItQ6BHJRQ" name="NAS" visibility="public" isUnique="false">
+        <ownedComment xmi:id="_oLav61EtEe-g8ItQ6BHJRQ">
+          <body>&lt;Saisir le texte de la note ici></body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_oLav7FEtEe-g8ItQ6BHJRQ" name="Poste" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_oLav7VEtEe-g8ItQ6BHJRQ" name="admin" visibility="public" type="_oLav4FEtEe-g8ItQ6BHJRQ" isUnique="false"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_oLav7lEtEe-g8ItQ6BHJRQ" memberEnd="_oLav4VEtEe-g8ItQ6BHJRQ _oLav71EtEe-g8ItQ6BHJRQ">
+      <ownedEnd xmi:id="_oLav71EtEe-g8ItQ6BHJRQ" visibility="public" type="_oLav4FEtEe-g8ItQ6BHJRQ" isUnique="false" association="_oLav7lEtEe-g8ItQ6BHJRQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_oLav8FEtEe-g8ItQ6BHJRQ" memberEnd="_oLav5FEtEe-g8ItQ6BHJRQ _oLav8VEtEe-g8ItQ6BHJRQ">
+      <ownedEnd xmi:id="_oLav8VEtEe-g8ItQ6BHJRQ" visibility="public" type="_oLav4FEtEe-g8ItQ6BHJRQ" isUnique="false" association="_oLav8FEtEe-g8ItQ6BHJRQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_oLav8lEtEe-g8ItQ6BHJRQ" memberEnd="_oLav5VEtEe-g8ItQ6BHJRQ _oLav81EtEe-g8ItQ6BHJRQ">
+      <ownedEnd xmi:id="_oLav81EtEe-g8ItQ6BHJRQ" visibility="public" type="_oLav4FEtEe-g8ItQ6BHJRQ" isUnique="false" association="_oLav8lEtEe-g8ItQ6BHJRQ"/>
+    </packagedElement>
+    <profileApplication xmi:id="_oNnIIFEtEe-g8ItQ6BHJRQ">
+      <eAnnotations xmi:id="_oNuc4FEtEe-g8ItQ6BHJRQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="JavaExtensions.profile.xmi#_oM1FB1EtEe-g8ItQ6BHJRQ"/>
+      </eAnnotations>
+      <appliedProfile href="JavaExtensions.profile.xmi#_oM1FAFEtEe-g8ItQ6BHJRQ"/>
+    </profileApplication>
+  </uml:Model>
+  <JavaExtensions:JavaPackage xmi:id="_oNvD8FEtEe-g8ItQ6BHJRQ" base_Package="_oLavwFEtEe-g8ItQ6BHJRQ"/>
+  <JavaExtensions:JavaClass xmi:id="_oNz8cFEtEe-g8ItQ6BHJRQ" base_Class="_oLavxFEtEe-g8ItQ6BHJRQ"/>
+  <JavaExtensions:JavaClass xmi:id="_oNz8cVEtEe-g8ItQ6BHJRQ" base_Class="_oLavy1EtEe-g8ItQ6BHJRQ"/>
+  <JavaExtensions:JavaClass xmi:id="_oNz8clEtEe-g8ItQ6BHJRQ" base_Class="_oLav11EtEe-g8ItQ6BHJRQ"/>
+  <JavaExtensions:JavaClass xmi:id="_oNz8c1EtEe-g8ItQ6BHJRQ" base_Class="_oLav4FEtEe-g8ItQ6BHJRQ"/>
+</xmi:XMI>
